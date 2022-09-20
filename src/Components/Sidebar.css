@@ -1,10 +1,10 @@
 .sidebar {
     top: 80px;
     position: sticky;
-    /* flex: 0.2; */
     border-radius: 10px;
     text-align: center;
     height: fit-content;
+
 }
 
 .sidebar__avatar {
@@ -72,4 +72,40 @@
 .sidebar__statNumber {
     font-weight: bold;
     color: #0a66c2 !important;
+}
+
+
+.sidebar__bottom {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar__bottom > p {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.sidebar__recentItems {
+    display: flex;
+    padding: 5px;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.sidebar__recentItems:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sidebar__hash {
+    margin-left: 5px;
+    margin-right: 10px;
 }

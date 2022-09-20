@@ -1,22 +1,18 @@
-import React from 'react';
-import './App.css';
-import { Header } from './Components/Header';
-import { Sidebar } from './Components/Sidebar';
+import React from "react";
+import "./App.css";
+import { Feed } from "./Components/Feed";
+import { Header } from "./Components/Header";
+import { Sidebar } from "./Components/Sidebar";
 
 function App() {
   return (
     <div className="app">
+      <Header />
 
-    <Header />
-
-    <div className="appbody">
-
-    <Sidebar />
-
-    </div>
-
-
-
+      <div className="appbody">
+        <Sidebar />
+        <Feed />
+      </div>
     </div>
   );
 }
