@@ -13,13 +13,13 @@ export const Posts = ({ name, description, message, photoUrl }) => {
       <div className="post__header">
         <Avatar />
         <div className="post__info">
-          <h2>Rahul Sharma</h2>
-          <p>Description</p>
+          <h2>{name}</h2>
+          <p>{description}</p>
         </div>
       </div>
 
       <div className="post__body">
-        <p>Message goes here</p>
+        <p>{message}</p>
       </div>
 
       <div className="post__buttons">
