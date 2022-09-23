@@ -8,7 +8,14 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import { Posts } from "./Posts";
 import { db } from "../Firebase";
-import firebase from 'firebase'
+// import firebase from 'firebase'
+// import * as firebase from "firebase/app";
+import firebase from 'firebase/compat/app';
+
+import 'firebase/compat/auth';
+
+import 'firebase/compat/firestore';
+
 
 export const Feed = () => {
   const [input,setInput] = useState('')
@@ -33,7 +40,7 @@ export const Feed = () => {
       description:"this is a test",
       message:input,
       photoUrl:"",
-      timestamp:firebase.firestore.FieldValue.serverTimeStamp(),
+      timestamp:firebase.firestore.FieldValue.serverTimestamp(),
     })
   };
 
