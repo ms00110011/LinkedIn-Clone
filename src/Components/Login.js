@@ -5,6 +5,7 @@ export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
   const [name, setName] = useState("");
+  const [profilePic, setProfilePic] = useState("");
 
   const Register = () => {};
 
@@ -20,10 +21,30 @@ export const Login = () => {
       />
 
       <form>
-        <input placeholder="Full name" type="text" />
-        <input type="text" placeholder="Profile Pic URL (optional)" />
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input
+          placeholder="Full name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          type="text"
+        />
+        <input
+          type="text"
+          value={profilePic}
+          onChange={(e) => setProfilePic(e.target.value)}
+          placeholder="Profile Pic URL (optional)"
+        />
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setpassword(e.target.value)}
+          placeholder="Password"
+        />
         <button type="submit" onClick={loginToApp}>
           Sign In
         </button>
